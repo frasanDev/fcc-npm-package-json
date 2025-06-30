@@ -5,6 +5,7 @@
   "keywords": [ "freecodecamp", "related", "words" ],
   "license": "MIT",
   "version": "1.0.0",
+  "package": "versión 1.versión 2.versión 13"
   "dependencies": {
     "express": "^4.14.0"
   },
