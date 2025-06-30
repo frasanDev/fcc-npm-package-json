@@ -77,6 +77,8 @@ Changelog:
 
 ```
 Preferred communication style: Simple, everyday language.
+Student name: Franklin Sanchez Martinez
+Learning focus: FreeCodeCamp Node.js curriculum
 ```
 
 ## Development Notes
