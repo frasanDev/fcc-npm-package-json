@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeCodeCamp Node.js Study Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #0a0a23;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .info-box {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .success {
+            background: #e8f5e8;
+            border-left: 4px solid #4caf50;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        .endpoint {
+            background: #fff3e0;
+            border: 1px solid #ff9800;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FreeCodeCamp Node.js Study Project</h1>
+        
+        <div class="info-box success">
+            <h3>Project Ready for FreeCodeCamp Validation</h3>
+            <p>This project is configured with the exact format required by FreeCodeCamp's npm curriculum.</p>
+        </div>
+        
+        <div class="info-box">
+            <h3>Package.json Configuration</h3>
+            <ul>
+                <li><strong>Name:</strong> fcc-learn-npm-package-json</li>
+                <li><strong>Author:</strong> Franklin Sanchez Martinez</li>
+                <li><strong>Express Version:</strong> ^4.14.0 (as required by FreeCodeCamp)</li>
+                <li><strong>Main:</strong> server.js</li>
+            </ul>
+        </div>
+        
+        <div class="endpoint">
+            <h3>Available Endpoints</h3>
+            <ul>
+                <li><code>/</code> - This homepage</li>
+                <li><code>/package.json</code> - Package.json for FreeCodeCamp validation</li>
+                <li><code>/api/hello</code> - Basic API endpoint</li>
+                <li><code>/api/echo/:word</code> - Echo service</li>
+                <li><code>/api/whoami</code> - Request header parser</li>
+                <li><code>/api/timestamp/:date</code> - Timestamp microservice</li>
+            </ul>
+        </div>
+        
+        <div class="info-box">
+            <h3>For FreeCodeCamp Submission</h3>
+            <p>Use this URL structure in FreeCodeCamp:</p>
+            <code>https://your-username.github.io/fcc-npm-package-json</code>
+            <br><br>
+            <p>The validation endpoint will be:</p>
+            <code>https://your-username.github.io/fcc-npm-package-json/package.json</code>
+        </div>
+        
+        <div class="info-box success">
+            <h3>Quick Test</h3>
+            <p>To verify your setup is working, visit:</p>
+            <ul>
+                <li><a href="/package.json" target="_blank">View package.json</a></li>
+                <li><a href="/api/hello" target="_blank">Test API endpoint</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
