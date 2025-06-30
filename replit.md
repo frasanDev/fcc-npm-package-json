@@ -70,7 +70,9 @@ This is a Node.js learning project designed to follow the FreeCodeCamp Backend D
 
 ```
 Changelog:
-- June 30, 2025. Initial setup
+- June 30, 2025. Initial setup with Express.js server
+- June 30, 2025. Added package.json endpoint for FreeCodeCamp validation
+- June 30, 2025. Successfully completed first FreeCodeCamp task: "How to Use package.json"
 ```
 
 ## User Preferences
