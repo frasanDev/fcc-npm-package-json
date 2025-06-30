@@ -30,8 +30,11 @@ app.get('/', (req, res) => {
 
 // Package.json endpoint for FreeCodeCamp validation
 app.get('/package.json', (req, res) => {
-  const packageJson = require('./package.json');
-  res.json(packageJson);
+  res.setHeader('Content-Type', 'application/json');
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  const fs = require('fs');
+  const packageJson = fs.readFileSync('./package.json', 'utf8');
+  res.send(packageJson);
 });
 
 // API route - basic JSON response
