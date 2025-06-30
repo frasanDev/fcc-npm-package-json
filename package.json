@@ -1,8 +1,8 @@
 {
-  "name": "workspace",
+  "name": "fcc-learn-npm-package-json",
   "version": "1.0.0",
   "description": "A comprehensive Node.js project setup designed for learning backend development through the FreeCodeCamp curriculum. This project provides a solid foundation for understanding Express.js, API development, and Node.js fundamentals.",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
