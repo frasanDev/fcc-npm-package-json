@@ -28,6 +28,12 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
 
+// Package.json endpoint for FreeCodeCamp validation
+app.get('/package.json', (req, res) => {
+  const packageJson = require('./package.json');
+  res.json(packageJson);
+});
+
 // API route - basic JSON response
 app.get('/api/hello', (req, res) => {
   res.json({
@@ -120,11 +126,13 @@ app.use((req, res) => {
     message: "The requested endpoint does not exist",
     availableRoutes: [
       "GET /",
+      "GET /package.json",
       "GET /api/hello",
       "GET /api/echo/:word",
       "GET /api/whoami",
       "POST /api/data",
-      "GET /api/timestamp/:date?"
+      "GET /api/timestamp/:date",
+      "GET /api/timestamp"
     ]
   });
 });
