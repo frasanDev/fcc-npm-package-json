@@ -1,28 +1,36 @@
-// Script para configurar package.json para FreeCodeCamp
+// Script para crear package.json exacto del boilerplate FreeCodeCamp
 const fs = require('fs');
 
-function updatePackageJsonForFCC() {
+function createFCCPackageJson() {
+  // Package.json exacto del boilerplate oficial de FreeCodeCamp
+  const fccPackageJson = {
+    "name": "fcc-learn-npm-package-json",
+    "author": "Franklin Sanchez Martinez",
+    "dependencies": {
+      "express": "^4.14.0"
+    },
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/freeCodeCamp/boilerplate-npm.git"
+    }
+  };
+  
   try {
-    // Leer el archivo package.json actual
-    const packageJson = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+    // Escribir el package.json con formato exacto
+    fs.writeFileSync('package.json', JSON.stringify(fccPackageJson, null, 2));
     
-    // Configuraciones específicas para FreeCodeCamp
-    packageJson.author = "Franklin Sanchez Martinez";
-    packageJson.main = "index.js";
-    packageJson.name = "fcc-learn-npm-package-json";
-    
-    // Escribir el archivo actualizado
-    fs.writeFileSync('package.json', JSON.stringify(packageJson, null, 2));
-    
-    console.log('✅ package.json configurado para FreeCodeCamp');
+    console.log('✅ Package.json creado con formato oficial de FreeCodeCamp');
     console.log('📝 Autor: Franklin Sanchez Martinez');
-    console.log('🎯 Main: index.js');
-    console.log('📦 Name: fcc-learn-npm-package-json');
+    console.log('🎯 Express version: ^4.14.0 (como requiere FreeCodeCamp)');
     
   } catch (error) {
-    console.error('❌ Error al actualizar package.json:', error.message);
+    console.error('❌ Error al crear package.json:', error.message);
   }
 }
 
 // Ejecutar la configuración
-updatePackageJsonForFCC();
+createFCCPackageJson();
