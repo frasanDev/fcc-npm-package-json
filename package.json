@@ -12,27 +12,4 @@
     "type": "git",
     "url": "https://github.com/freeCodeCamp/boilerplate-npm.git"
   }
-}  "name": "fcc-learn-npm-package-json",
-  "author": "Franklin Sanchez Martinez",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^17.0.0",
-    "express": "^4.21.2"
-  },
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/freeCodeCamp/boilerplate-npm.git"
-  },
-  "version": "1.0.0",
-  "description": "A comprehensive Node.js project setup designed for learning backend development through the FreeCodeCamp curriculum. This project provides a solid foundation for understanding Express.js, API development, and Node.js fundamentals.",
-  "keywords": [],
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/freeCodeCamp/boilerplate-npm/issues"
-  },
-  "homepage": "https://github.com/freeCodeCamp/boilerplate-npm#readme"
 }
